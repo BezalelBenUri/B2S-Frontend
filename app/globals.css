@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base colors */
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+
+    /* Card and UI elements */
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Primary - Data blue */
+    --primary: 210 100% 50%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Secondary - Teal accent */
+    --secondary: 174 75% 37%;
+    --secondary-foreground: 210 40% 98%;
+
+    /* Muted elements */
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    /* Accent elements */
+    --accent: 262 83% 58%;
+    --accent-foreground: 210 40% 98%;
+
+    /* Destructive elements */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Borders and inputs */
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 210 100% 50%;
+
+    /* Data visualization colors */
+    --chart-1: 210 100% 50%; /* Blue */
+    --chart-2: 174 75% 37%; /* Teal */
+    --chart-3: 262 83% 58%; /* Purple */
+    --chart-4: 335 78% 58%; /* Pink */
+    --chart-5: 32 94% 56%; /* Orange */
+
+    /* Data status colors */
+    --success: 142 72% 45%;
+    --success-foreground: 210 40% 98%;
+    --warning: 32 94% 56%;
+    --warning-foreground: 210 40% 98%;
+    --info: 199 89% 48%;
+    --info-foreground: 210 40% 98%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Base colors */
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+
+    /* Card and UI elements */
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Primary - Data blue */
+    --primary: 210 100% 50%;
+    --primary-foreground: 222 47% 11%;
+
+    /* Secondary - Teal accent */
+    --secondary: 174 75% 37%;
+    --secondary-foreground: 222 47% 11%;
+
+    /* Muted elements */
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    /* Accent elements */
+    --accent: 262 83% 58%;
+    --accent-foreground: 210 40% 98%;
+
+    /* Destructive elements */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Borders and inputs */
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 210 100% 50%;
+
+    /* Data visualization colors - slightly brighter in dark mode */
+    --chart-1: 210 100% 60%; /* Blue */
+    --chart-2: 174 75% 47%; /* Teal */
+    --chart-3: 262 83% 68%; /* Purple */
+    --chart-4: 335 78% 68%; /* Pink */
+    --chart-5: 32 94% 66%; /* Orange */
+
+    /* Data status colors */
+    --success: 142 72% 45%;
+    --success-foreground: 222 47% 11%;
+    --warning: 32 94% 56%;
+    --warning-foreground: 222 47% 11%;
+    --info: 199 89% 48%;
+    --info-foreground: 222 47% 11%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Data visualization helpers */
+.data-blue {
+  color: hsl(var(--chart-1));
+}
+.data-teal {
+  color: hsl(var(--chart-2));
+}
+.data-purple {
+  color: hsl(var(--chart-3));
+}
+.data-pink {
+  color: hsl(var(--chart-4));
+}
+.data-orange {
+  color: hsl(var(--chart-5));
+}
+
+.bg-data-blue {
+  background-color: hsl(var(--chart-1));
+}
+.bg-data-teal {
+  background-color: hsl(var(--chart-2));
+}
+.bg-data-purple {
+  background-color: hsl(var(--chart-3));
+}
+.bg-data-pink {
+  background-color: hsl(var(--chart-4));
+}
+.bg-data-orange {
+  background-color: hsl(var(--chart-5));
+}
