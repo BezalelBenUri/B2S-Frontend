@@ -64,7 +64,7 @@ class AuthServiceClass {
             id: "buyer-123",
             email: credentials.email || "buyer@example.com",
             phone_number: credentials.phone || "+1234567890",
-            user_type: "admin", // Always return buyer for UI testing
+            user_type: "buyer",
             username: "Test Buyer",
             is_verified: true,
           },
