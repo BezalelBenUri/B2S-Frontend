@@ -61,11 +61,11 @@ class AuthServiceClass {
         message: "Login successful",
         data: {
           user: {
-            id: "buyer-123",
+            id: "seller-123",
             email: credentials.email || "buyer@example.com",
             phone_number: credentials.phone || "+1234567890",
-            user_type: "buyer",
-            username: "Test Buyer",
+            user_type: "seller",
+            username: "Test seller",
             is_verified: true,
           },
           token: "mock-jwt-token-" + Date.now(),
