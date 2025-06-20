@@ -16,6 +16,6 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 git push origin main
-git push org HEAD:org-branch
+git push org HEAD:augustus
 
 Write-Host "`n✅ Pushed to personal (main) and organization (org-branch)"
